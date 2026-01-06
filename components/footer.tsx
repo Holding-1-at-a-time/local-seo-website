@@ -44,6 +44,11 @@ export function Footer() {
             <h3 className="mb-4 text-lg font-semibold">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
+                <Link href="/san-antonio-auto-detailing" className="hover:text-primary transition-colors">
+                  Auto Detailing
+                </Link>
+              </li>
+              <li>
                 <Link href="/san-antonio-interior-deep-cleaning" className="hover:text-primary transition-colors">
                   Interior Deep Cleaning
                 </Link>
@@ -61,6 +66,31 @@ export function Footer() {
               <li>
                 <Link href="/san-antonio-paint-correction" className="hover:text-primary transition-colors">
                   Paint Correction
+                </Link>
+              </li>
+              <li>
+                <Link href="/san-antonio-engine-detailing" className="hover:text-primary transition-colors">
+                  Engine Detailing
+                </Link>
+              </li>
+              <li>
+                <Link href="/san-antonio-full-body-wash" className="hover:text-primary transition-colors">
+                  Full Body Wash
+                </Link>
+              </li>
+              <li>
+                <Link href="/san-antonio-headlight-polishing" className="hover:text-primary transition-colors">
+                  Headlight Polishing
+                </Link>
+              </li>
+              <li>
+                <Link href="/san-antonio-paint-repair" className="hover:text-primary transition-colors">
+                  Paint Repair
+                </Link>
+              </li>
+              <li>
+                <Link href="/san-antonio-seat-shampooing" className="hover:text-primary transition-colors">
+                  Seat Shampooing
                 </Link>
               </li>
             </ul>

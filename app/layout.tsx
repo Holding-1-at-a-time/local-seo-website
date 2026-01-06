@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "One Detail At A Time | Premium Car Detailing in San Antonio, TX",
   description:
-    "IDA-certified auto detailing studio in San Antonio, TX. Expert interior cleaning, paint correction, ceramic coating, and hand wash services. Located at 11692 Bricken Circle, San Antonio, TX 78233.",
+    "IDA-certified auto detailing studio in San Antonio, TX. Expert interior cleaning, paint correction, ceramic coating, and hand wash services. 10% of revenue supports Junior Achievement of South Texas. Located at 11692 Bricken Circle, San Antonio, TX 78233.",
   keywords: [
     "car detailing san antonio",
     "auto detailing san antonio tx",
@@ -18,12 +18,15 @@ export const metadata: Metadata = {
     "paint correction san antonio",
     "interior detailing san antonio",
     "professional car wash san antonio",
+    "engine detailing san antonio",
+    "headlight polishing san antonio",
+    "seat shampooing san antonio",
   ],
   generator: "v0.app",
   openGraph: {
     title: "One Detail At A Time | Premium Car Detailing in San Antonio, TX",
     description:
-      "IDA-certified auto detailing studio in San Antonio, TX. Expert interior cleaning, paint correction, ceramic coating services.",
+      "IDA-certified auto detailing studio in San Antonio, TX. Expert interior cleaning, paint correction, ceramic coating services. 10% supports local children's charity.",
     type: "website",
     locale: "en_US",
   },
@@ -65,7 +68,7 @@ export default function RootLayout({
               name: "One Detail At A Time",
               image: "https://onedetailatatime.com/logo.png",
               description:
-                "One Detail At A Time offers exceptional vehicle care at our professional detailing studio. Our IDA-certified specialist provides advanced services, including thorough interior cleaning, meticulous paint correction, and protective ceramic coating.",
+                "One Detail At A Time offers exceptional vehicle care at our professional detailing studio. Our IDA-certified specialist provides advanced services, including thorough interior cleaning, meticulous paint correction, and protective ceramic coating. We donate 10% of revenue to Junior Achievement of South Texas.",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "11692 Bricken Circle",
@@ -92,6 +95,44 @@ export default function RootLayout({
               areaServed: {
                 "@type": "City",
                 name: "San Antonio",
+              },
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Auto Detailing Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Interior Deep Cleansing",
+                      description: "Complete interior detailing with steam cleaning and odor removal",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Exterior Hand Wash & Sealant",
+                      description: "Premium hand wash with paint sealant protection",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Ceramic Coating",
+                      description: "2-year and 5-year ceramic coating options for ultimate protection",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Paint Correction",
+                      description: "Professional paint correction to remove swirls and scratches",
+                    },
+                  },
+                ],
               },
             }),
           }}

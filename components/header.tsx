@@ -20,6 +20,18 @@ export function Header() {
           >
             Services
           </Link>
+          <Link
+            href="/ceramic-coating-san-antonio"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Ceramic Coating
+          </Link>
+          <Link
+            href="/interior-detailing-san-antonio"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Interior Detailing
+          </Link>
           <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
             Contact
           </Link>
