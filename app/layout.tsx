@@ -8,19 +8,16 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "One Detail At A Time | Premium Car Detailing in San Antonio, TX",
+  title: "odaat1 - Professional Ceramic Coating & Interior Deep Cleansing",
   description:
-    "IDA-certified auto detailing studio in San Antonio, TX. Expert interior cleaning, paint correction, ceramic coating, and hand wash services. 10% of revenue supports Junior Achievement of South Texas. Located at 11692 Bricken Circle, San Antonio, TX 78233.",
+    "Professional ceramic coating and interior deep cleansing services. Years of paint protection and complete interior restoration. Request your free estimate today.",
   keywords: [
-    "car detailing san antonio",
-    "auto detailing san antonio tx",
-    "ceramic coating san antonio",
-    "paint correction san antonio",
-    "interior detailing san antonio",
-    "professional car wash san antonio",
-    "engine detailing san antonio",
-    "headlight polishing san antonio",
-    "seat shampooing san antonio",
+    "ceramic coating",
+    "interior detailing",
+    "car detailing",
+    "paint protection",
+    "interior deep cleaning",
+    "professional detailing",
   ],
   generator: "v0.app",
   openGraph: {
