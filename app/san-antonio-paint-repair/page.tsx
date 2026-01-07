@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Paint Repair San Antonio TX | Paint Chip & Scratch Repair",
     description: "Expert paint chip and scratch repair in San Antonio, TX. Professional touch-up and paint correction.",
-    url: "https://onedetailatatime.com/san-antonio-paint-repair",
+    url: "https://odaat1.com/san-antonio-paint-repair",
     siteName: "One Detail At A Time",
     locale: "en_US",
     type: "website",

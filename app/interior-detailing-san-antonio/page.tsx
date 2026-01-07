@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Interior Detailing San Antonio | Deep Cleaning Service",
     description:
       "Premium interior deep cleaning in San Antonio, TX. Steam cleaning, leather conditioning, and odor removal.",
-    url: "https://onedetailatatime.com/interior-detailing-san-antonio",
+    url: "https://odaat1.com/interior-detailing-san-antonio",
     siteName: "One Detail At A Time",
     locale: "en_US",
     type: "website",

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Full Body Wash San Antonio TX | Hand Wash Car Detailing",
     description:
       "Professional full body hand wash services in San Antonio, TX. Expert car washing with premium products.",
-    url: "https://onedetailatatime.com/san-antonio-full-body-wash",
+    url: "https://odaat1.com/san-antonio-full-body-wash",
     siteName: "One Detail At A Time",
     locale: "en_US",
     type: "website",

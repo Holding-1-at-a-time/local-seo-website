@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ceramic Coating San Antonio | Ultimate Paint Protection",
     description: "Premium ceramic coating in San Antonio, TX. 2-year and 5-year protection options for your vehicle.",
-    url: "https://onedetailatatime.com/ceramic-coating-san-antonio",
+    url: "https://odaat1.com/ceramic-coating-san-antonio",
     siteName: "One Detail At A Time",
     locale: "en_US",
     type: "website",

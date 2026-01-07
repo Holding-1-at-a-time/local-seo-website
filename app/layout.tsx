@@ -66,7 +66,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "AutoRepair",
               name: "One Detail At A Time",
-              image: "https://onedetailatatime.com/logo.png",
+              image: "https://odaat1.com/logo.png",
               description:
                 "One Detail At A Time offers exceptional vehicle care at our professional detailing studio. Our IDA-certified specialist provides advanced services, including thorough interior cleaning, meticulous paint correction, and protective ceramic coating. We donate 10% of revenue to Junior Achievement of South Texas.",
               address: {
