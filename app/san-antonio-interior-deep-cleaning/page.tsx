@@ -1,6 +1,5 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { EstimateForm } from "@/components/estimate-form"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -92,11 +91,12 @@ export default function InteriorCleaningPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
               <div className="space-y-6">
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-balance">
-                  The sanctuary you deserve.
+                  Interior Deep Cleaning in San Antonio, TX
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Every drive should feel like the first. Transform your vehicle's interior with professional deep
-                  cleaning that restores comfort, health, and pride of ownership.
+                  Experience the ultimate luxury of professional car interior deep cleaning in San Antonio. Our
+                  IDA-certified specialist provides comprehensive interior restoration, including steam cleaning,
+                  leather conditioning, and odor removal at our professional detailing studio.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" asChild>
@@ -203,27 +203,8 @@ export default function InteriorCleaningPage() {
           </div>
         </section>
 
-        {/* Estimate Form Section */}
-        <section className="py-16 bg-card">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Request Your Free Estimate</h2>
-                <p className="text-lg text-muted-foreground">
-                  Share your vehicle details and we'll provide a personalized quote within 24 hours.
-                </p>
-              </div>
-              <Card className="border-border bg-background">
-                <CardContent className="p-8">
-                  <EstimateForm defaultService="Interior Deep Cleaning" />
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         {/* FAQ */}
-        <section className="py-16">
+        <section className="py-16 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
@@ -240,13 +221,14 @@ export default function InteriorCleaningPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-primary">
+        <section className="py-16">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4 text-primary-foreground">Transform Your Interior Today</h2>
-            <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Experience the difference professional care makes. Every detail matters.
+            <h2 className="text-3xl font-bold mb-4">Ready to Restore Your Car's Interior?</h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Contact One Detail At A Time for professional interior deep cleaning in San Antonio, TX. Call or text us
+              to schedule your appointment.
             </p>
-            <Button size="lg" variant="secondary" asChild>
+            <Button size="lg" asChild>
               <a href="tel:7262071007">
                 <Phone className="mr-2 h-5 w-5" />
                 Call (726) 207-1007

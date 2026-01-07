@@ -6,7 +6,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Phone, CheckCircle2, Shield, Star } from "lucide-react"
 import type { Metadata } from "next"
 import Link from "next/link"
-import { EstimateForm } from "@/components/estimate-form"
 
 export const metadata: Metadata = {
   title: "Ceramic Coating San Antonio, TX | 2-Year & 5-Year Protection | One Detail At A Time",
@@ -33,13 +32,14 @@ export default function CeramicCoatingPage() {
             <div className="max-w-4xl mx-auto text-center space-y-6">
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm text-primary">
                 <Star className="h-4 w-4" />
-                IDA-Certified Excellence
+                Pro-Grade Protection
               </div>
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-balance">
-                Protection. Perfected.
+                Ceramic Coating in San Antonio, Texas
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed text-pretty max-w-3xl mx-auto">
-                Your vehicle deserves more than a wash. It deserves a shield that lasts years, not months.
+                Ultimate paint protection for your vehicle with 2-year or 5-year pro-grade ceramic coating. Expert
+                application in San Antonio, TX.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button size="lg" asChild className="text-lg h-12">
@@ -322,25 +322,6 @@ export default function CeramicCoatingPage() {
                   * Additional fees may apply for vehicles with excessive soiling, stains, or dog hair.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Estimate Form Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Get Your Free Estimate</h2>
-                <p className="text-lg text-muted-foreground">
-                  Tell us about your vehicle and we'll provide a detailed quote within 24 hours.
-                </p>
-              </div>
-              <Card className="border-border">
-                <CardContent className="p-8">
-                  <EstimateForm defaultService="Ceramic Coating" />
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>

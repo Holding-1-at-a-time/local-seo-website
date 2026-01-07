@@ -29,7 +29,6 @@ export const metadata: Metadata = {
       "IDA-certified auto detailing studio in San Antonio, TX. Expert interior cleaning, paint correction, ceramic coating services. 10% supports local children's charity.",
     type: "website",
     locale: "en_US",
-    url: "https://odaat1.com",
   },
   icons: {
     icon: [
@@ -67,10 +66,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "AutoRepair",
               name: "One Detail At A Time",
-              image: "https://odaat1.com/logo.png",
+              image: "https://onedetailatatime.com/logo.png",
               description:
                 "One Detail At A Time offers exceptional vehicle care at our professional detailing studio. Our IDA-certified specialist provides advanced services, including thorough interior cleaning, meticulous paint correction, and protective ceramic coating. We donate 10% of revenue to Junior Achievement of South Texas.",
-              url: "https://odaat1.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "11692 Bricken Circle",

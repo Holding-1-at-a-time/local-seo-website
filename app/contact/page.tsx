@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { EstimateForm } from "@/components/estimate-form"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Phone, MapPin, Clock, Mail } from "lucide-react"
 import type { Metadata } from "next"
@@ -22,33 +22,18 @@ export default function ContactPage() {
         <section className="relative py-20 bg-gradient-to-b from-background to-card">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center space-y-4">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-balance">Get Your Free Estimate</h1>
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-balance">Contact Us</h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Experience San Antonio's premier auto detailing. We'll respond within 24 hours.
+                Get in touch with San Antonio's premier auto detailing studio
               </p>
             </div>
           </div>
         </section>
 
-        {/* Estimate Form Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <Card className="border-border">
-                <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold mb-6">Request Your Estimate</h2>
-                  <EstimateForm />
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         {/* Contact Info */}
-        <section className="py-16 bg-card">
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 text-center">Or Contact Us Directly</h2>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                 <Card className="border-border">
                   <CardContent className="p-6 text-center space-y-3">
@@ -58,18 +43,6 @@ export default function ContactPage() {
                     <h3 className="font-semibold">Phone</h3>
                     <a href="tel:7262071007" className="text-sm text-primary hover:underline block">
                       (726) 207-1007
-                    </a>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-border">
-                  <CardContent className="p-6 text-center space-y-3">
-                    <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                      <Mail className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="font-semibold">Email</h3>
-                    <a href="mailto:estimates@odaat1.com" className="text-sm text-primary hover:underline block">
-                      estimates@odaat1.com
                     </a>
                   </CardContent>
                 </Card>
@@ -101,18 +74,34 @@ export default function ContactPage() {
                     </p>
                   </CardContent>
                 </Card>
+
+                <Card className="border-border">
+                  <CardContent className="p-6 text-center space-y-3">
+                    <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                      <Mail className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold">Service Type</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Studio Only
+                      <br />
+                      (No Mobile Service)
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
         </section>
 
         {/* Map Section */}
-        <section className="py-12">
+        <section className="py-12 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto space-y-8">
               <div className="text-center">
                 <h2 className="text-3xl font-bold mb-4">Visit Our San Antonio Studio</h2>
-                <p className="text-lg text-muted-foreground">Professional detailing studio - appointment required.</p>
+                <p className="text-lg text-muted-foreground">
+                  We're located in San Antonio, TX. Professional detailing studio - appointment required.
+                </p>
               </div>
 
               <div className="relative aspect-video overflow-hidden rounded-lg border border-border">
@@ -128,34 +117,52 @@ export default function ContactPage() {
                 />
               </div>
 
-              <Card className="border-border bg-card">
+              <Card className="border-border bg-background">
                 <CardContent className="p-8">
                   <h3 className="text-xl font-bold mb-4">Important Information</h3>
                   <ul className="space-y-3 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="text-primary">•</span>
-                      <span>Professional detailing studio - appointments required</span>
+                      <span>We are a private professional detailing studio - appointments required</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary">•</span>
-                      <span>Studio service only (no mobile detailing)</span>
+                      <span>We do not offer mobile detailing services at this time</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary">•</span>
-                      <span>20% non-refundable deposit required</span>
+                      <span>20% non-refundable deposit required to book appointment</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary">•</span>
-                      <span>24-hour cancellation notice required</span>
+                      <span>
+                        Please provide 24-hour cancellation notice or deposit is forfeited and additional 20% required
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary">•</span>
-                      <span>Additional fees may apply for excessive soiling or pet hair</span>
+                      <span>Additional fees may apply for excessive soiling, stains, or pet hair</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 bg-primary">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-4 text-primary-foreground">Ready to Schedule Your Service?</h2>
+            <p className="text-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
+              Call us today to book your appointment at our San Antonio detailing studio.
+            </p>
+            <Button size="lg" variant="secondary" asChild className="text-lg h-12">
+              <a href="tel:7262071007">
+                <Phone className="mr-2 h-5 w-5" />
+                Call (726) 207-1007
+              </a>
+            </Button>
           </div>
         </section>
       </main>

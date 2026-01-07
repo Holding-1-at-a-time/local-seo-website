@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Phone, Calendar } from "lucide-react"
+import { Phone } from "lucide-react"
 
 export function Header() {
   return (
@@ -21,13 +21,13 @@ export function Header() {
             Services
           </Link>
           <Link
-            href="/san-antonio-ceramic-coating"
+            href="/ceramic-coating-san-antonio"
             className="text-sm font-medium transition-colors hover:text-primary"
           >
             Ceramic Coating
           </Link>
           <Link
-            href="/san-antonio-interior-deep-cleaning"
+            href="/interior-detailing-san-antonio"
             className="text-sm font-medium transition-colors hover:text-primary"
           >
             Interior Detailing
@@ -37,20 +37,12 @@ export function Header() {
           </Link>
         </nav>
 
-        <div className="flex items-center gap-2">
-          <Button variant="outline" size="sm" asChild className="hidden lg:flex bg-transparent">
-            <Link href="/contact" className="flex items-center gap-2">
-              <Calendar className="h-4 w-4" />
-              Get Estimate
-            </Link>
-          </Button>
-          <Button asChild>
-            <a href="tel:7262071007" className="flex items-center gap-2">
-              <Phone className="h-4 w-4" />
-              <span className="hidden sm:inline">(726) 207-1007</span>
-            </a>
-          </Button>
-        </div>
+        <Button asChild>
+          <a href="tel:7262071007" className="flex items-center gap-2">
+            <Phone className="h-4 w-4" />
+            <span className="hidden sm:inline">(726) 207-1007</span>
+          </a>
+        </Button>
       </div>
     </header>
   )

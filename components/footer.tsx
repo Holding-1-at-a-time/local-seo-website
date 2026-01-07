@@ -5,14 +5,11 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid gap-8 md:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-3">
           <div>
             <h3 className="mb-4 text-lg font-semibold text-primary">One Detail At A Time</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               IDA-certified auto detailing studio serving San Antonio, TX with premium vehicle care services.
-            </p>
-            <p className="text-sm text-primary font-medium mt-4">
-              10% of revenue supports Junior Achievement of South Texas
             </p>
           </div>
 
@@ -47,8 +44,8 @@ export function Footer() {
             <h3 className="mb-4 text-lg font-semibold">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/san-antonio-ceramic-coating" className="hover:text-primary transition-colors">
-                  Ceramic Coating
+                <Link href="/san-antonio-auto-detailing" className="hover:text-primary transition-colors">
+                  Auto Detailing
                 </Link>
               </li>
               <li>
@@ -57,39 +54,43 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/san-antonio-exterior-hand-wash-sealant" className="hover:text-primary transition-colors">
+                  Exterior Hand Wash & Sealant
+                </Link>
+              </li>
+              <li>
+                <Link href="/san-antonio-ceramic-coating" className="hover:text-primary transition-colors">
+                  Ceramic Coating
+                </Link>
+              </li>
+              <li>
                 <Link href="/san-antonio-paint-correction" className="hover:text-primary transition-colors">
                   Paint Correction
                 </Link>
               </li>
               <li>
-                <Link href="/san-antonio-exterior-hand-wash-sealant" className="hover:text-primary transition-colors">
-                  Exterior Hand Wash
+                <Link href="/san-antonio-engine-detailing" className="hover:text-primary transition-colors">
+                  Engine Detailing
                 </Link>
               </li>
               <li>
-                <Link href="/san-antonio-auto-detailing" className="hover:text-primary transition-colors">
-                  Complete Detailing
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="mb-4 text-lg font-semibold">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/contact" className="hover:text-primary transition-colors">
-                  Get Free Estimate
+                <Link href="/san-antonio-full-body-wash" className="hover:text-primary transition-colors">
+                  Full Body Wash
                 </Link>
               </li>
               <li>
-                <Link href="/privacy-policy" className="hover:text-primary transition-colors">
-                  Privacy Policy
+                <Link href="/san-antonio-headlight-polishing" className="hover:text-primary transition-colors">
+                  Headlight Polishing
                 </Link>
               </li>
               <li>
-                <Link href="/terms-and-conditions" className="hover:text-primary transition-colors">
-                  Terms & Conditions
+                <Link href="/san-antonio-paint-repair" className="hover:text-primary transition-colors">
+                  Paint Repair
+                </Link>
+              </li>
+              <li>
+                <Link href="/san-antonio-seat-shampooing" className="hover:text-primary transition-colors">
+                  Seat Shampooing
                 </Link>
               </li>
             </ul>
@@ -97,7 +98,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} One Detail At A Time LLC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} One Detail At A Time. All rights reserved.</p>
         </div>
       </div>
     </footer>
