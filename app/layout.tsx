@@ -8,16 +8,19 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "odaat1 - Professional Ceramic Coating & Interior Deep Cleansing",
+  title: "One Detail At A Time | Premium Car Detailing in San Antonio, TX",
   description:
-    "Professional ceramic coating and interior deep cleansing services. Years of paint protection and complete interior restoration. Request your free estimate today.",
+    "IDA-certified auto detailing studio in San Antonio, TX. Expert interior cleaning, paint correction, ceramic coating, and hand wash services. 10% of revenue supports Junior Achievement of South Texas. Located at 11692 Bricken Circle, San Antonio, TX 78233.",
   keywords: [
-    "ceramic coating",
-    "interior detailing",
-    "car detailing",
-    "paint protection",
-    "interior deep cleaning",
-    "professional detailing",
+    "car detailing san antonio",
+    "auto detailing san antonio tx",
+    "ceramic coating san antonio",
+    "paint correction san antonio",
+    "interior detailing san antonio",
+    "professional car wash san antonio",
+    "engine detailing san antonio",
+    "headlight polishing san antonio",
+    "seat shampooing san antonio",
   ],
   generator: "v0.app",
   openGraph: {
@@ -26,6 +29,7 @@ export const metadata: Metadata = {
       "IDA-certified auto detailing studio in San Antonio, TX. Expert interior cleaning, paint correction, ceramic coating services. 10% supports local children's charity.",
     type: "website",
     locale: "en_US",
+    url: "https://odaat1.com",
   },
   icons: {
     icon: [
@@ -63,9 +67,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "AutoRepair",
               name: "One Detail At A Time",
-              image: "https://onedetailatatime.com/logo.png",
+              image: "https://odaat1.com/logo.png",
               description:
                 "One Detail At A Time offers exceptional vehicle care at our professional detailing studio. Our IDA-certified specialist provides advanced services, including thorough interior cleaning, meticulous paint correction, and protective ceramic coating. We donate 10% of revenue to Junior Achievement of South Texas.",
+              url: "https://odaat1.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "11692 Bricken Circle",

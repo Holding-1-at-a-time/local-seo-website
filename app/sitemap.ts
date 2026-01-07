@@ -3,42 +3,30 @@ import type { MetadataRoute } from "next"
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://odaat1.com"
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/ceramic-coating`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/interior-deep-cleansing`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/get-estimate`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/privacy`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/terms`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
+  const routes = [
+    "",
+    "/contact",
+    "/privacy-policy",
+    "/terms-and-conditions",
+    "/san-antonio-auto-detailing",
+    "/san-antonio-ceramic-coating",
+    "/san-antonio-interior-deep-cleaning",
+    "/san-antonio-exterior-hand-wash-sealant",
+    "/san-antonio-paint-correction",
+    "/san-antonio-engine-detailing",
+    "/san-antonio-full-body-wash",
+    "/san-antonio-headlight-polishing",
+    "/san-antonio-paint-repair",
+    "/san-antonio-seat-shampooing",
+    "/ceramic-coating-san-antonio",
+    "/interior-detailing-san-antonio",
+    "/san-antonio-car-detailing-services",
   ]
+
+  return routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: route === "" ? 1 : 0.8,
+  }))
 }
