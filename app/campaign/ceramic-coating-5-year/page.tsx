@@ -43,6 +43,15 @@ export const metadata: Metadata = {
   },
 }
 
+/**
+ * Campaign landing page for the 5-Year Premium Ceramic Coating offering in San Antonio.
+ *
+ * Renders a static marketing page including structured JSON-LD, hero and benefits sections,
+ * service inclusions, an estimate form (prefilled for the 5-Year Premium Ceramic Coating),
+ * charity and trust signals, and a simple footer with contact links.
+ *
+ * @returns The React element for the campaign landing page.
+ */
 export default function CeramicCoating5YearCampaignPage() {
   const jsonLd = {
     "@context": "https://schema.org",

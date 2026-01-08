@@ -5,6 +5,14 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Phone, Award, Shield, Heart, Sparkles } from "lucide-react"
 import Link from "next/link"
 
+/**
+ * Home page component for the One Detail At A Time website, presenting the hero, services, mission, and contact sections.
+ *
+ * Renders a static layout including Header and Footer plus main sections: hero with CTA, charity mission, services grid,
+ * why-choose-us content, and a final CTA panel — all optimized for San Antonio auto detailing.
+ *
+ * @returns The homepage JSX element containing header, main content sections, and footer.
+ */
 export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">

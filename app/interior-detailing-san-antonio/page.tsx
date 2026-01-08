@@ -20,6 +20,15 @@ export const metadata: Metadata = {
   },
 }
 
+/**
+ * Render the Interior Deep Cleaning landing page for San Antonio.
+ *
+ * Embeds JSON-LD Service schema for One Detail At A Time and renders the full landing page:
+ * hero with CTAs and image, value-driven features, service details and process, before/after comparison,
+ * internal SEO links, social-impact message, final CTA, and site header/footer.
+ *
+ * @returns A React element containing the complete interior detailing landing page markup, including a JSON-LD script tag.
+ */
 export default function InteriorDetailingLandingPage() {
   const jsonLd = {
     "@context": "https://schema.org",

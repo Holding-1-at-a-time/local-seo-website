@@ -1,5 +1,12 @@
 import type { MetadataRoute } from "next"
 
+/**
+ * Generate sitemap entries for the site's pages.
+ *
+ * Each entry contains `url`, `lastModified`, `changeFrequency`, and `priority`. All entries share the same `lastModified` timestamp, set to the function invocation time.
+ *
+ * @returns An array of sitemap entries mapping site routes to their `lastModified`, `changeFrequency`, and `priority` values.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://odaat1.com"
   const currentDate = new Date().toISOString()

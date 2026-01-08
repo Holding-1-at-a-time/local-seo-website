@@ -44,6 +44,15 @@ export const metadata: Metadata = {
   },
 }
 
+/**
+ * Campaign landing page for the 3-Year Ceramic Coating promotion in San Antonio.
+ *
+ * Renders structured JSON-LD and a multi-section marketing layout including hero, benefits,
+ * what's included, estimate form (preselected for the 3-Year Ceramic Coating), charity information,
+ * trust signals, and a simple footer with contact links.
+ *
+ * @returns The page's JSX element rendering the complete campaign landing content.
+ */
 export default function CeramicCoating3YearCampaignPage() {
   const jsonLd = {
     "@context": "https://schema.org",

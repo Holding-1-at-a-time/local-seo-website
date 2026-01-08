@@ -1,5 +1,14 @@
 import React from "react";
 
+/**
+ * Render a static estimate request form.
+ *
+ * Renders a form with labeled inputs for name (required text), email (required email),
+ * service (required select with options: "Ceramic Coating", "Interior Detailing", "Paint Correction"),
+ * an optional details textarea (4 rows), and a submit button labeled "Get Estimate".
+ *
+ * @returns A JSX element containing the estimate request form
+ */
 export function EstimateForm() {
   return (
     <form className="estimate-form">
