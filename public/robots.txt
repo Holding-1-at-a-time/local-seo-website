@@ -4,8 +4,18 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemap location - Dynamic Next.js sitemap
 Sitemap: https://odaat1.com/sitemap.xml
+
+# Allow crawling of campaign landing pages
+Allow: /campaign/
 
 # Crawl-delay for politeness
 Crawl-delay: 1
+
+# Block common bot traffic (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
