@@ -28,6 +28,7 @@ export default function CeramicCoatingLandingPage() {
     provider: {
       "@type": "LocalBusiness",
       name: "One Detail At A Time",
+      url: "https://odaat1.com",
       address: {
         "@type": "PostalAddress",
         streetAddress: "11692 Bricken Circle",
@@ -254,6 +255,42 @@ export default function CeramicCoatingLandingPage() {
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </a>
                     </Button>
+                  </div>
+                </div>
+
+                <div className="mt-16 pt-16 border-t border-border">
+                  <h3 className="text-2xl font-bold mb-6 text-center">Complete Your Protection</h3>
+                  <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+                    Maximize your ceramic coating results with our complementary San Antonio detailing services
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <Link
+                      href="/san-antonio-paint-correction"
+                      className="p-6 rounded-xl border border-border hover:border-primary/50 transition-colors bg-card"
+                    >
+                      <h4 className="font-semibold mb-2">Paint Correction</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Remove swirls and scratches before ceramic coating for flawless results
+                      </p>
+                    </Link>
+                    <Link
+                      href="/san-antonio-interior-deep-cleaning"
+                      className="p-6 rounded-xl border border-border hover:border-primary/50 transition-colors bg-card"
+                    >
+                      <h4 className="font-semibold mb-2">Interior Deep Cleaning</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Complete interior restoration to match your protected exterior
+                      </p>
+                    </Link>
+                    <Link
+                      href="/san-antonio-car-detailing-services"
+                      className="p-6 rounded-xl border border-border hover:border-primary/50 transition-colors bg-card"
+                    >
+                      <h4 className="font-semibold mb-2">View All Services</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Explore our complete range of San Antonio auto detailing services
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>
