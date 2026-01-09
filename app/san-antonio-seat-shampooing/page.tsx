@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Seat Shampooing San Antonio TX | Upholstery Cleaning",
     description:
       "Professional seat shampooing and upholstery cleaning in San Antonio, TX. Deep clean and restore car seats.",
-    url: "https://onedetailatatime.com/san-antonio-seat-shampooing",
+    url: "https://odaat1.com/san-antonio-seat-shampooing",
     siteName: "One Detail At A Time",
     locale: "en_US",
     type: "website",

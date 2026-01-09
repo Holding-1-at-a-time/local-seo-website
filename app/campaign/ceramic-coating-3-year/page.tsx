@@ -1,0 +1,420 @@
+import { Button } from "@/components/ui/button"
+import { Phone, Shield, CheckCircle2, Sparkles, Star } from "lucide-react"
+import type { Metadata } from "next"
+import { EstimateForm } from "@/components/estimate-form"
+import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "3-Year Ceramic Coating San Antonio TX | Premium Paint Protection | $899",
+  description:
+    "Professional 3-year ceramic coating in San Antonio. 9H hardness, hydrophobic protection, UV resistance. IDA-certified specialist. 10% to Junior Achievement. Call (726) 207-1007.",
+  keywords:
+    "ceramic coating san antonio, 3 year ceramic coating, paint protection san antonio, car coating san antonio tx, ceramic paint protection, auto detailing san antonio",
+  openGraph: {
+    title: "3-Year Ceramic Coating San Antonio | Premium Paint Protection",
+    description:
+      "Professional 3-year ceramic coating. 9H hardness, hydrophobic protection, UV resistance. IDA-certified.",
+    url: "https://odaat1.com/campaign/ceramic-coating-3-year",
+    siteName: "One Detail At A Time",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://odaat1.com/ceramic-coating-application-san-antonio-tx-profess.jpg",
+        width: 1200,
+        height: 630,
+        alt: "3-Year Ceramic Coating Application San Antonio TX",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "3-Year Ceramic Coating San Antonio | Premium Protection",
+    description: "Professional 3-year ceramic coating. 9H hardness, hydrophobic protection, UV resistance.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+}
+
+export default function CeramicCoating3YearCampaignPage() {
+  const nextYear = new Date();
+  nextYear.setFullYear(nextYear.getFullYear() + 1);
+  const priceValidUntil = nextYear.toISOString().split('T')[0];
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://odaat1.com/#business",
+        name: "One Detail At A Time",
+        image: "https://odaat1.com/ceramic-coating-application-san-antonio-tx-profess.jpg",
+        url: "https://odaat1.com",
+        telephone: "+17262071007",
+        priceRange: "$$",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "11692 Bricken Circle",
+          addressLocality: "San Antonio",
+          addressRegion: "TX",
+          postalCode: "78233",
+          addressCountry: "US",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 29.5737,
+          longitude: -98.3471,
+        },
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            opens: "07:00",
+            closes: "22:00",
+          },
+        ],
+        areaServed: {
+          "@type": "City",
+          name: "San Antonio",
+          "@id": "https://en.wikipedia.org/wiki/San_Antonio",
+        },
+      },
+      {
+        "@type": "Product",
+        "@id": "https://odaat1.com/campaign/ceramic-coating-3-year#product",
+        name: "3-Year Ceramic Coating San Antonio",
+        description:
+          "Professional 3-year ceramic coating service providing 9H hardness scratch resistance, hydrophobic protection, and UV resistance for vehicles in San Antonio, TX.",
+        image: "https://odaat1.com/ceramic-coating-application-san-antonio-tx-profess.jpg",
+        brand: {
+          "@type": "Brand",
+          name: "One Detail At A Time",
+        },
+        offers: {
+          "@type": "Offer",
+          url: "https://odaat1.com/campaign/ceramic-coating-3-year",
+          priceCurrency: "USD",
+          price: "899",
+          priceValidUntil: priceValidUntil,
+          availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
+          seller: {
+            "@id": "https://odaat1.com/#business",
+          },
+          areaServed: {
+            "@type": "City",
+            name: "San Antonio",
+          },
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5.0",
+          bestRating: "5",
+          worstRating: "1",
+          ratingCount: "87",
+        },
+      },
+      {
+        "@type": "Service",
+        "@id": "https://odaat1.com/campaign/ceramic-coating-3-year#service",
+        serviceType: "Ceramic Coating Application",
+        name: "3-Year Ceramic Coating",
+        provider: {
+          "@id": "https://odaat1.com/#business",
+        },
+        areaServed: {
+          "@type": "City",
+          name: "San Antonio",
+          "@id": "https://en.wikipedia.org/wiki/San_Antonio",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Ceramic Coating Services",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "3-Year Ceramic Coating",
+                description:
+                  "Professional ceramic coating with 3-year protection, 9H hardness, and hydrophobic properties",
+              },
+            },
+          ],
+        },
+      },
+    ],
+  }
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      {/* NO HEADER/NAVIGATION - Campaign Landing Page */}
+      <div className="flex min-h-screen flex-col">
+        <main className="flex-1">
+          {/* Hero Section */}
+          <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-b from-background to-card">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto text-center space-y-8">
+                <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-5 py-2.5 text-sm text-primary border border-primary/20">
+                  <Shield className="h-4 w-4" />
+                  <span>3-Year Premium Protection</span>
+                </div>
+                <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-balance leading-[0.95]">
+                  Shield Your Investment.
+                  <br />
+                  <span className="text-primary">3 Years Strong.</span>
+                </h1>
+                <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-pretty">
+                  Professional ceramic coating in San Antonio that protects your vehicle from UV rays, scratches, and
+                  harsh elements for three full years.
+                </p>
+
+                <div className="flex items-center justify-center gap-1 pt-4">
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <span className="ml-2 text-sm text-muted-foreground">5.0 from 87+ San Antonio customers</span>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                  <Button
+                    size="lg"
+                    asChild
+                    className="text-lg h-16 px-10 text-primary-foreground rounded-full shadow-lg"
+                  >
+                    <a href="tel:7262071007">
+                      <Phone className="mr-2 h-5 w-5" />
+                      Call Now: (726) 207-1007
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Hero Image */}
+            <div className="container mx-auto px-4 mt-16">
+              <div className="relative max-w-5xl mx-auto aspect-video overflow-hidden rounded-3xl shadow-2xl">
+                <img
+                  src="/ceramic-coating-application-san-antonio-tx-profess.jpg"
+                  alt="Professional 3-year ceramic coating application in San Antonio TX showing glossy finish"
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Benefits Section */}
+          <section className="py-24 bg-card">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">Why 3-Year Ceramic Coating?</h2>
+                <p className="text-xl text-muted-foreground">
+                  Perfect for San Antonio drivers seeking premium protection at exceptional value
+                </p>
+              </div>
+
+              <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+                <div className="text-center space-y-4 p-6">
+                  <div className="h-16 w-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto">
+                    <Shield className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">9H Hardness Protection</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Military-grade scratch resistance shields your paint from swirls, light scratches, and daily wear
+                  </p>
+                </div>
+
+                <div className="text-center space-y-4 p-6">
+                  <div className="h-16 w-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto">
+                    <Sparkles className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Hydrophobic Technology</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Water and dirt slide right off. Your vehicle stays cleaner longer with minimal maintenance
+                  </p>
+                </div>
+
+                <div className="text-center space-y-4 p-6">
+                  <div className="h-16 w-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto">
+                    <CheckCircle2 className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">UV & Chemical Shield</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Protects against San Antonio's intense sun, bird droppings, tree sap, and road chemicals
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* What's Included */}
+          <section className="py-24">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <div className="text-center mb-16">
+                  <h2 className="text-4xl md:text-5xl font-bold mb-6">What's Included</h2>
+                  <p className="text-xl text-muted-foreground">
+                    Complete ceramic coating service by IDA-certified specialist in San Antonio
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
+                      <div>
+                        <div className="font-semibold mb-1">Full Paint Decontamination</div>
+                        <div className="text-sm text-muted-foreground">Clay bar treatment and iron remover</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
+                      <div>
+                        <div className="font-semibold mb-1">Paint Correction (1-Stage)</div>
+                        <div className="text-sm text-muted-foreground">Remove light swirls and imperfections</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
+                      <div>
+                        <div className="font-semibold mb-1">Surface Preparation</div>
+                        <div className="text-sm text-muted-foreground">IPA wipe for maximum adhesion</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
+                      <div>
+                        <div className="font-semibold mb-1">Professional Ceramic Application</div>
+                        <div className="text-sm text-muted-foreground">Precision coating in controlled environment</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
+                      <div>
+                        <div className="font-semibold mb-1">3-Year Protection Warranty</div>
+                        <div className="text-sm text-muted-foreground">Guaranteed performance and durability</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
+                      <div>
+                        <div className="font-semibold mb-1">Maintenance Kit Included</div>
+                        <div className="text-sm text-muted-foreground">Everything needed to care for your coating</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Estimate Form Section */}
+          <section className="py-24 bg-card">
+            <div className="container mx-auto px-4">
+              <div className="max-w-2xl mx-auto">
+                <div className="text-center mb-12">
+                  <h2 className="text-4xl md:text-5xl font-bold mb-6">Get Your Free Estimate</h2>
+                  <p className="text-xl text-muted-foreground">
+                    Fill out the form below and we'll contact you within 24 hours with a personalized quote for your
+                    vehicle
+                  </p>
+                </div>
+
+                <div className="bg-background rounded-3xl p-8 md:p-10 shadow-xl border border-border">
+                  <EstimateForm defaultService="ceramic-coating" />
+                </div>
+
+                <div className="text-center mt-8 space-y-2">
+                  <p className="text-sm text-muted-foreground">Prefer to talk? Call us directly</p>
+                  <Button size="lg" variant="outline" asChild className="rounded-full bg-transparent">
+                    <a href="tel:7262071007">
+                      <Phone className="mr-2 h-5 w-5" />
+                      (726) 207-1007
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Charity Section */}
+          <section className="py-20">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mx-auto text-center space-y-6 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-3xl p-10 md:p-12 border border-primary/20">
+                <h2 className="text-3xl md:text-4xl font-bold">Detailing With Purpose</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  10% of your investment goes to Junior Achievement of South Texas, empowering young people in San
+                  Antonio with entrepreneurial skills and financial literacy.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Trust Signals */}
+          <section className="py-16 bg-card border-t border-border">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <div className="grid md:grid-cols-3 gap-8 text-center">
+                  <div>
+                    <div className="text-4xl font-bold text-primary mb-2">87+</div>
+                    <div className="text-muted-foreground">Happy San Antonio Customers</div>
+                  </div>
+                  <div>
+                    <div className="text-4xl font-bold text-primary mb-2">IDA</div>
+                    <div className="text-muted-foreground">Certified Professional</div>
+                  </div>
+                  <div>
+                    <div className="text-4xl font-bold text-primary mb-2">3-Year</div>
+                    <div className="text-muted-foreground">Protection Warranty</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Simple Footer */}
+          <footer className="py-12 border-t border-border">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto space-y-6">
+                <div className="text-center space-y-2">
+                  <h3 className="text-2xl font-bold">One Detail At A Time</h3>
+                  <p className="text-muted-foreground">11692 Bricken Circle, San Antonio, TX 78233</p>
+                  <p className="text-muted-foreground">
+                    <a href="tel:7262071007" className="hover:text-primary transition-colors">
+                      (726) 207-1007
+                    </a>
+                  </p>
+                </div>
+                <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
+                  <Link href="/privacy-policy" className="hover:text-primary transition-colors">
+                    Privacy Policy
+                  </Link>
+                  <Link href="/terms-and-conditions" className="hover:text-primary transition-colors">
+                    Terms & Conditions
+                  </Link>
+                </div>
+                <div className="text-center text-sm text-muted-foreground">
+                  © {new Date().getFullYear()} One Detail At A Time. All rights reserved.
+                </div>
+              </div>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </>
+  )
+}

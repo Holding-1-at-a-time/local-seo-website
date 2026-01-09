@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Headlight Polishing San Antonio TX | Headlight Restoration",
     description:
       "Professional headlight polishing and restoration in San Antonio, TX. Remove oxidation and improve visibility.",
-    url: "https://onedetailatatime.com/san-antonio-headlight-polishing",
+    url: "https://odaat1.com/san-antonio-headlight-polishing",
     siteName: "One Detail At A Time",
     locale: "en_US",
     type: "website",

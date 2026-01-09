@@ -335,7 +335,18 @@ export default function HomePage() {
                     <div>
                       <h3 className="text-xl font-semibold mb-2">Advanced Techniques</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Paint correction, ceramic coating, and thorough interior restoration for San Antonio vehicles
+                        <Link href="/san-antonio-paint-correction" className="text-primary hover:underline">
+                          Paint correction
+                        </Link>
+                        ,{" "}
+                        <Link href="/san-antonio-ceramic-coating" className="text-primary hover:underline">
+                          ceramic coating
+                        </Link>
+                        , and{" "}
+                        <Link href="/san-antonio-interior-deep-cleaning" className="text-primary hover:underline">
+                          interior restoration
+                        </Link>{" "}
+                        for San Antonio vehicles
                       </p>
                     </div>
                   </li>
