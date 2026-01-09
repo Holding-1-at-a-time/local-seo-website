@@ -412,7 +412,7 @@ export default function InteriorDeepCleansingCampaignPage() {
                 </div>
 
                 <div className="bg-card rounded-3xl p-8 md:p-10 shadow-xl border border-border">
-                  <EstimateForm defaultService="Interior Deep Cleaning" />
+                  <EstimateForm defaultService="interior-detailing" />
                 </div>
 
                 <div className="text-center mt-8 space-y-2">

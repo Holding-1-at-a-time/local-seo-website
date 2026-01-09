@@ -1,38 +1,44 @@
-
 import js from '@eslint/js';
+import nextConfig from 'eslint-config-next';
+import reactPlugin from 'eslint-plugin-react';
+import tsParser from '@typescript-eslint/parser';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
 
 export default [
   js.configs.recommended,
-  "next",
-  "plugin:react/recommended",
-  "plugin:@typescript-eslint/recommended",
+  nextConfig,
   {
-    parser: "@typescript-eslint/parser",
+    plugins: {
+      '@typescript-eslint': tsPlugin,
+      react: reactPlugin,
+    },
+    parser: tsParser,
     parserOptions: {
       ecmaFeatures: { jsx: true },
       ecmaVersion: 2020,
-      sourceType: "module",
-      project: "./tsconfig.json",
+      sourceType: 'module',
+      project: './tsconfig.json',
     },
-    plugins: ["@typescript-eslint", "react"],
     settings: {
       react: {
-        version: "detect"
-      }
+        version: 'detect',
+      },
     },
     rules: {
-      // Add custom rules here
+      'no-unused-vars': 'warn',
+      'react/react-in-jsx-scope': 'off',
     },
-    overrides: [
-      {
-        files: ["*.ts", "*.tsx"],
-        parser: "@typescript-eslint/parser",
-        plugins: ["@typescript-eslint", "react"],
-        extends: ["plugin:@typescript-eslint/recommended", "plugin:react/recommended"],
-        rules: {
-          // TypeScript and React-specific rules
-        },
-      },
-    ],
+  },
+  {
+    files: ['*.ts', '*.tsx'],
+    plugins: {
+      '@typescript-eslint': tsPlugin,
+      react: reactPlugin,
+    },
+    parser: tsParser,
+    rules: {
+      '@typescript-eslint/explicit-function-return-type': 'off',
+      '@typescript-eslint/no-explicit-any': 'warn',
+    },
   },
 ];
