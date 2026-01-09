@@ -44,6 +44,16 @@ export const metadata: Metadata = {
   },
 }
 
+/**
+ * Renders the campaign landing page for the Interior Deep Cleaning service in San Antonio.
+ *
+ * The page includes embedded JSON-LD structured data for LocalBusiness, Product, and Service,
+ * and presents a marketing layout with a hero (rating and call-to-action), benefits, detailed
+ * "what's included" list, before/after comparison, an estimate form (prefilled for interior deep cleaning),
+ * a charity highlight, trust signals, and a simple footer with contact and policy links.
+ *
+ * @returns The React element tree representing the Interior Deep Cleaning campaign landing page.
+ */
 export default function InteriorDeepCleansingCampaignPage() {
   const jsonLd = {
     "@context": "https://schema.org",

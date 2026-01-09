@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   ],
 }
 
+/**
+ * Renders the San Antonio Auto Detailing page, including hero, services list, detailed why-we-choose section with links, FAQs, and call-to-action areas.
+ *
+ * @returns The React element for the Auto Detailing page.
+ */
 export default function AutoDetailingPage() {
   const services = [
     "Complete interior vacuuming and cleaning",

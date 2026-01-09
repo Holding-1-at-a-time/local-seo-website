@@ -49,6 +49,12 @@ export const metadata: Metadata = {
   },
 }
 
+/**
+ * Renders the application's root HTML structure, applies global fonts and dark theme, and injects analytics and JSON-LD.
+ *
+ * @param children - React nodes to render inside the document body
+ * @returns The root HTML element representing the top-level application layout
+ */
 export default function RootLayout({
   children,
 }: Readonly<{

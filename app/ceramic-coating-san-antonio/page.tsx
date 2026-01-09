@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   },
 }
 
+/**
+ * Render the Ceramic Coating landing page for One Detail At A Time targeted at San Antonio.
+ *
+ * Renders the full page markup including an embedded Service JSON-LD script, hero section, benefit
+ * highlights, service option cards (2-year and 5-year), complementary services grid, detailed
+ * process steps, social-impact message, and final call-to-action.
+ *
+ * @returns The React element for the Ceramic Coating landing page.
+ */
 export default function CeramicCoatingLandingPage() {
   const jsonLd = {
     "@context": "https://schema.org",
