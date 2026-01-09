@@ -80,9 +80,9 @@ export default function CeramicCoating5YearCampaignPage() {
         openingHoursSpecification: [
           {
             "@type": "OpeningHoursSpecification",
-            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-            opens: "08:00",
-            closes: "18:00",
+            dayOfWeek: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            opens: "07:00",
+            closes: "22:00",
           },
         ],
         areaServed: {
@@ -358,7 +358,7 @@ export default function CeramicCoating5YearCampaignPage() {
                 </div>
 
                 <div className="bg-background rounded-3xl p-8 md:p-10 shadow-xl border-2 border-primary/20">
-                  <EstimateForm defaultService="5-Year Premium Ceramic Coating" />
+                  <EstimateForm defaultService="ceramic-coating" />
                 </div>
 
                 <div className="text-center mt-8 space-y-2">

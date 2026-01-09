@@ -82,9 +82,9 @@ export default function InteriorDeepCleansingCampaignPage() {
         openingHoursSpecification: [
           {
             "@type": "OpeningHoursSpecification",
-            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-            opens: "08:00",
-            closes: "18:00",
+            dayOfWeek: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            opens: "07:00",
+            closes: "22:00",
           },
         ],
         areaServed: {
@@ -422,7 +422,7 @@ export default function InteriorDeepCleansingCampaignPage() {
                 </div>
 
                 <div className="bg-card rounded-3xl p-8 md:p-10 shadow-xl border border-border">
-                  <EstimateForm defaultService="Interior Deep Cleaning" />
+                  <EstimateForm defaultService="interior-detailing" />
                 </div>
 
                 <div className="text-center mt-8 space-y-2">
