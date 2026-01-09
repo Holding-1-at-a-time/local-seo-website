@@ -146,6 +146,25 @@ export default function AutoDetailingPage() {
                       controlled environment for superior results. Every service contributes to our mission—10% of
                       revenue supports Junior Achievement of South Texas, empowering local students.
                     </p>
+                    <p>
+                      Looking for specialized services? We offer{" "}
+                      <Link href="/san-antonio-ceramic-coating" className="text-primary hover:underline">
+                        premium ceramic coating
+                      </Link>
+                      ,{" "}
+                      <Link href="/san-antonio-paint-correction" className="text-primary hover:underline">
+                        multi-stage paint correction
+                      </Link>
+                      , and{" "}
+                      <Link href="/san-antonio-interior-deep-cleaning" className="text-primary hover:underline">
+                        interior deep cleaning services
+                      </Link>{" "}
+                      throughout San Antonio. View our{" "}
+                      <Link href="/san-antonio-car-detailing-services" className="text-primary hover:underline">
+                        complete service menu
+                      </Link>
+                      .
+                    </p>
                   </div>
                 </CardContent>
               </Card>

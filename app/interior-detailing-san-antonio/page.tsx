@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Interior Detailing San Antonio | Deep Cleaning Service",
     description:
       "Premium interior deep cleaning in San Antonio, TX. Steam cleaning, leather conditioning, and odor removal.",
-    url: "https://onedetailatatime.com/interior-detailing-san-antonio",
+    url: "https://odaat1.com/interior-detailing-san-antonio",
     siteName: "One Detail At A Time",
     locale: "en_US",
     type: "website",
@@ -29,6 +29,7 @@ export default function InteriorDetailingLandingPage() {
     provider: {
       "@type": "LocalBusiness",
       name: "One Detail At A Time",
+      url: "https://odaat1.com",
       address: {
         "@type": "PostalAddress",
         streetAddress: "11692 Bricken Circle",
@@ -312,6 +313,47 @@ export default function InteriorDetailingLandingPage() {
                       </li>
                     </ul>
                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Internal Linking Section for SEO */}
+          <section className="py-16">
+            <div className="container mx-auto px-4">
+              <div className="max-w-6xl mx-auto">
+                <h3 className="text-3xl font-bold mb-8 text-center">Complete Your San Antonio Auto Care</h3>
+                <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
+                  Pair your interior detailing with our exterior services for total vehicle transformation
+                </p>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <Link
+                    href="/san-antonio-ceramic-coating"
+                    className="p-6 rounded-xl border border-border hover:border-primary/50 transition-colors bg-card"
+                  >
+                    <h4 className="font-semibold mb-2 text-lg">Ceramic Coating</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Protect your exterior with 2-year or 5-year ceramic coating in San Antonio
+                    </p>
+                  </Link>
+                  <Link
+                    href="/san-antonio-exterior-hand-wash-sealant"
+                    className="p-6 rounded-xl border border-border hover:border-primary/50 transition-colors bg-card"
+                  >
+                    <h4 className="font-semibold mb-2 text-lg">Exterior Hand Wash</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Premium hand wash with paint sealant for San Antonio weather protection
+                    </p>
+                  </Link>
+                  <Link
+                    href="/san-antonio-car-detailing-services"
+                    className="p-6 rounded-xl border border-border hover:border-primary/50 transition-colors bg-card"
+                  >
+                    <h4 className="font-semibold mb-2 text-lg">All Services</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Browse our complete San Antonio car detailing service menu
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
