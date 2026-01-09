@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
@@ -58,6 +59,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`font-sans antialiased`}>
         {children}
+        <SpeedInsights />
         <Analytics />
         <script
           type="application/ld+json"
