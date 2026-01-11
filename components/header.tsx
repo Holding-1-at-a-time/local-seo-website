@@ -1,6 +1,14 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Phone } from "lucide-react"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu"
 
 export function Header() {
   return (
@@ -32,6 +40,82 @@ export function Header() {
           >
             Interior Detailing
           </Link>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-sm font-medium">Articles</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/articles/professional-auto-detailing-guide-san-antonio"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">Complete Detailing Guide</div>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            All stages of professional auto detailing
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/articles/paint-correction-exterior-detailing-san-antonio"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">Paint Correction Guide</div>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            Understanding paint correction tiers
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/articles/exterior-car-detailing-guide-san-antonio"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">Exterior Detailing Guide</div>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            Vehicle conservation for South Texas
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/articles/car-interior-cleaning-guide-san-antonio"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">Interior Cleaning Guide</div>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            Health, hygiene & preservation
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/articles/paint-decontamination-guide-san-antonio"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">Decontamination Guide</div>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            The foundation of quality detailing
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
           <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
             Contact
           </Link>
