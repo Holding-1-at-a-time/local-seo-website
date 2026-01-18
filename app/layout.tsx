@@ -57,6 +57,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-2936785166610232" />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
         <SpeedInsights />
@@ -136,6 +139,30 @@ export default function RootLayout({
                   },
                 ],
               },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "AggregateRating",
+              itemReviewed: {
+                "@type": "LocalBusiness",
+                name: "One Detail at a Time (ODAAT1)",
+                image: "https://odaat1.com/logo.png",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "11692 Bricken Circle",
+                  addressLocality: "San Antonio",
+                  addressRegion: "TX",
+                  postalCode: "78233",
+                },
+              },
+              ratingValue: "5",
+              bestRating: "5",
+              ratingCount: "47",
             }),
           }}
         />

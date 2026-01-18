@@ -2,7 +2,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle2, Phone, Award, Shield, Heart, Sparkles } from "lucide-react"
+import { CheckCircle2, Phone, Award, Shield, Heart, Sparkles, Star } from "lucide-react"
 import Link from "next/link"
 
 export default function HomePage() {
@@ -91,8 +91,186 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Services Overview */}
+        {/* Comparison Table - Price Anchor */}
         <section className="py-20 md:py-32">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
+                  Why a "Quick Wash" is Costing You More Than You Think
+                </h2>
+                <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                  In the intense San Antonio heat, your vehicle's clear coat is under constant attack. While drive-through 
+                  car washes offer convenience, they often use abrasive brushes that act like sandpaper, inflicting thousands 
+                  of microscopic "swirl marks" on your paint.
+                </p>
+              </div>
+
+              {/* Desktop Table */}
+              <div className="hidden md:block overflow-x-auto">
+                <table className="w-full border-collapse rounded-xl overflow-hidden">
+                  <thead>
+                    <tr className="bg-muted/50">
+                      <th className="p-4 text-left font-semibold border-b border-border">Feature / Benefit</th>
+                      <th className="p-4 text-center font-semibold border-b border-border text-muted-foreground">Standard Drive-Through</th>
+                      <th className="p-4 text-center font-semibold border-b border-border text-primary">ODAAT1 Professional</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-border">
+                      <td className="p-4 font-medium">Cleaning Method</td>
+                      <td className="p-4 text-center text-muted-foreground">
+                        <span className="text-red-400">✗</span> Friction Brushes (Abrasive)
+                      </td>
+                      <td className="p-4 text-center">
+                        <span className="text-primary">✓</span> 2-Bucket Hand Wash (Touchless-first)
+                      </td>
+                    </tr>
+                    <tr className="border-b border-border bg-muted/20">
+                      <td className="p-4 font-medium">Contaminant Removal</td>
+                      <td className="p-4 text-center text-muted-foreground">
+                        <span className="text-red-400">✗</span> Surface Dirt Only
+                      </td>
+                      <td className="p-4 text-center">
+                        <span className="text-primary">✓</span> Chemical & Mechanical Decontamination
+                      </td>
+                    </tr>
+                    <tr className="border-b border-border">
+                      <td className="p-4 font-medium">
+                        Paint Condition
+                        <Link href="/articles/paint-correction-exterior-detailing-san-antonio" className="text-xs text-primary block hover:underline">
+                          What are swirl marks?
+                        </Link>
+                      </td>
+                      <td className="p-4 text-center text-muted-foreground">
+                        <span className="text-red-400">✗</span> Inflicts "Swirl Marks"
+                      </td>
+                      <td className="p-4 text-center">
+                        <span className="text-primary">✓</span> Removes Defects & Restores Clarity
+                      </td>
+                    </tr>
+                    <tr className="border-b border-border bg-muted/20">
+                      <td className="p-4 font-medium">UV Protection</td>
+                      <td className="p-4 text-center text-muted-foreground">
+                        <span className="text-red-400">✗</span> Spray-on Wax (Lasts 1 week)
+                      </td>
+                      <td className="p-4 text-center">
+                        <span className="text-primary">✓</span> Ceramic/Graphene (Lasts 2-7 years)
+                      </td>
+                    </tr>
+                    <tr className="border-b border-border">
+                      <td className="p-4 font-medium">Interior Treatment</td>
+                      <td className="p-4 text-center text-muted-foreground">
+                        <span className="text-red-400">✗</span> Vacuum Only
+                      </td>
+                      <td className="p-4 text-center">
+                        <span className="text-primary">✓</span> Steam Sterilization & Ozone Treatment
+                      </td>
+                    </tr>
+                    <tr className="border-b border-border bg-muted/20">
+                      <td className="p-4 font-medium">Local Hazard Defense</td>
+                      <td className="p-4 text-center text-muted-foreground">
+                        <span className="text-red-400">✗</span> None
+                      </td>
+                      <td className="p-4 text-center">
+                        <span className="text-primary">✓</span> Neutralizes Cedar Pollen & Alkaline Dust
+                      </td>
+                    </tr>
+                    <tr className="border-b border-border">
+                      <td className="p-4 font-medium">Resale Value Impact</td>
+                      <td className="p-4 text-center text-muted-foreground">
+                        <span className="text-red-400">✗</span> Negligible / Wear & Tear
+                      </td>
+                      <td className="p-4 text-center">
+                        <span className="text-primary">✓</span> Increases Asset Equity & Longevity
+                      </td>
+                    </tr>
+                    <tr className="bg-primary/10">
+                      <td className="p-4 font-medium">Community Impact</td>
+                      <td className="p-4 text-center text-muted-foreground">
+                        Corporate Profit
+                      </td>
+                      <td className="p-4 text-center font-semibold text-primary">
+                        <Heart className="h-4 w-4 inline mr-1" />
+                        10% Donated to Junior Achievement
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Mobile List Comparison */}
+              <div className="md:hidden space-y-4">
+                <div className="bg-primary/10 rounded-xl p-6 border border-primary/20">
+                  <h3 className="font-semibold text-primary mb-4">ODAAT1 Professional Detail</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>2-Bucket Hand Wash (Touchless-first)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Chemical & Mechanical Decontamination</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Removes Defects & Restores Clarity</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Ceramic/Graphene Protection (2-7 years)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Steam Sterilization & Ozone Treatment</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>10% Donated to Junior Achievement</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="bg-muted/30 rounded-xl p-6 border border-border">
+                  <h3 className="font-semibold text-muted-foreground mb-4">Standard Drive-Through Wash</h3>
+                  <ul className="space-y-3 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400">✗</span>
+                      <span>Abrasive Brushes Damage Paint</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400">✗</span>
+                      <span>Surface Dirt Only</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400">✗</span>
+                      <span>Inflicts Swirl Marks</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400">✗</span>
+                      <span>Spray Wax Lasts 1 Week</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400">✗</span>
+                      <span>No Protection from Texas Sun</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="text-center mt-10">
+                <Button size="lg" asChild className="text-lg h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <Link href="/contact">
+                    <Shield className="mr-2 h-5 w-5" />
+                    Protect My Investment - Get a Free Estimate
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Overview */}
+        <section className="py-20 md:py-32 bg-card">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <Sparkles className="h-12 w-12 text-primary mx-auto mb-4" />
